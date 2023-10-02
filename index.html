@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1> To-Do List </h1>
+        <h2> Welcome Back!</h2>
+        <h2> Start scheduling your tasks.</h2>
+        <div id="container-input-btn">
+            <input id="input-task"  placeholder="What´s your first task?"> 
+            <input id="input-date"  type ="date"> 
+
+            <div class="container-btn">
+            <button id="btn-filterCompleted" onclick ="showCompletedTask()"> Completed</button>
+            <button id="btn-filterIncompleted" onclick ="showIncompletedTask()"> Incompleted</button>
+            <button id="btn-filterAll" onclick ="showAllTask()"> All </button>
+            <button id="btn-add" onclick ="addTask()"> + </button>
+            </div>   
+        </div>
+        <ul id="container-task">
+        </ul>
+    </div>
+ <script src="index.js"></script>
+</body>
+</html>
+
+
